@@ -1,11 +1,11 @@
 import React from "react";
-import { Typography } from "@material-ui/core";
 import "typeface-roboto";
+import TopBar from "./components/TopBar";
 
 function App() {
     return (
         <div>
-            <Typography>Hello</Typography>
+            <TopBar />
         </div>
     );
 }
