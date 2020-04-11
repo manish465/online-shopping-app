@@ -1,8 +1,8 @@
 import React from "react";
-import { Paper } from "@material-ui/core";
+import { Paper, Grid, Typography, Button } from "@material-ui/core";
 
 const Banner = () => {
-    return <Paper />;
+    return <div>Banner</div>;
 };
 
 export default Banner;
