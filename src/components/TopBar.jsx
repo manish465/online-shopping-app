@@ -4,7 +4,7 @@ import { Person as PersonIcon } from "@material-ui/icons";
 
 const TopBar = () => {
     return (
-        <AppBar>
+        <AppBar position="static">
             <Toolbar>
                 <Grid container justify="space-between">
                     <Grid xl={6}>
