@@ -8,7 +8,7 @@ const TopBar = () => {
             <Toolbar>
                 <Grid container justify="space-between">
                     <Grid xl={6}>
-                        <Typography>SMARKET</Typography>
+                        <Typography variant="h5">SMARKET</Typography>
                     </Grid>
                     <Grid xl={6}>
                         <Typography>
