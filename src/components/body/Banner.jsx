@@ -28,8 +28,8 @@ const Banner = () => {
                         </Button>
                     </Grid>
                 </Grid>
-                <Grid xs={6} container alignContent="center">
-                    <img src={Avatar} alt="" />
+                <Grid xs={6} container justify="center">
+                    <img src={Avatar} alt="AVATAR" />
                 </Grid>
             </Grid>
         </Paper>
