@@ -14,12 +14,13 @@ const Banner = () => {
                     justify="space-around"
                 >
                     <Grid>
-                        <Typography variant="overline">
+                        <Typography color="secondary" variant="overline">
                             --2009 Collection
                         </Typography>
                     </Grid>
                     <Grid>
-                        <Typography variant="h3">Enjoy this Sale</Typography>
+                        <Typography variant="h3">Enjoy this</Typography>
+                        <Typography variant="h3">Autumn Collection</Typography>
                     </Grid>
                     <Grid>
                         <Button variant="contained" color="secondary">
