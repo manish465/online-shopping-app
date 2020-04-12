@@ -1,5 +1,6 @@
 import React from "react";
 import { Paper, Grid, Typography, Button } from "@material-ui/core";
+import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Avatar from "../../assets/avetar.png";
 
 const Banner = () => {
@@ -25,6 +26,7 @@ const Banner = () => {
                     <Grid>
                         <Button variant="contained" color="secondary">
                             <Typography variant="overline">SHOP NOW</Typography>
+                            <ShoppingCartIcon />
                         </Button>
                     </Grid>
                 </Grid>
