@@ -5,13 +5,13 @@ import Avatar from "../../assets/avetar.png";
 const Banner = () => {
     return (
         <Paper variant="outlined">
-            <Grid xs={12} container>
+            <Grid container>
                 <Grid
                     alignContent="center"
                     direction="column"
                     xs={6}
                     container
-                    justify="space-around"
+                    justify="space-evenly"
                 >
                     <Grid>
                         <Typography color="secondary" variant="overline">
