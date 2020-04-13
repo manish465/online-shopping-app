@@ -1,36 +1,48 @@
 import React from "react";
-import { Paper, Grid, Typography, Button } from "@material-ui/core";
+import { Paper, Grid, Typography, Button, makeStyles } from "@material-ui/core";
 import ShoppingCartIcon from "@material-ui/icons/ShoppingCart";
 import Avatar from "../../assets/avetar.png";
 
+const useStyles = makeStyles({
+    paper: {
+        margin: "40px 5px",
+        padding: "10px",
+        background: "linear-gradient(45deg, #c6e7ff 30%, #4dffbd  90%)",
+    },
+});
+
 const Banner = () => {
+    const classes = useStyles();
     return (
-        <Paper variant="outlined">
-            <Grid container>
+        <Paper className={classes.paper} variant="outlined">
+            <Grid container direction="row">
                 <Grid
                     alignContent="center"
                     direction="column"
-                    xs={6}
                     container
+                    xs={6}
                     justify="space-evenly"
                 >
-                    <Grid>
+                    <Grid item>
                         <Typography color="secondary" variant="overline">
                             --2009 Collection
                         </Typography>
                     </Grid>
-                    <Grid>
+                    <Grid item>
                         <Typography variant="h3">Enjoy this</Typography>
                         <Typography variant="h3">Autumn Collection</Typography>
                     </Grid>
-                    <Grid>
-                        <Button variant="contained" color="secondary">
+                    <Grid item>
+                        <Button
+                            endIcon={<ShoppingCartIcon />}
+                            variant="contained"
+                            color="secondary"
+                        >
                             <Typography variant="overline">SHOP NOW</Typography>
-                            <ShoppingCartIcon />
                         </Button>
                     </Grid>
                 </Grid>
-                <Grid xs={6} container justify="center">
+                <Grid item xs={6} container justify="center">
                     <img src={Avatar} alt="AVATAR" />
                 </Grid>
             </Grid>
